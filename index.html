@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="index.js"></script>
+    <title>Ёжик-поварёшка</title>
+</head>
+<body>
+	<div class="welcome">
+    <div id="welcome-section">
+        <h1>Добро пожаловать!</h1>
+        <p>Я Ёжик-поварёшка, облегчу тебе жизнь💜</p>
+        <p>Помогу найти подходящее блюдо по продуктам или предложу что-то вкусненькое</p>
+        <p>Bon appétit</p>
+        <br>
+        <p>Сначала давай познакомимся 😈</p>
+        <input type="text" id="name-input" placeholder="Как тебя зовут?">
+        <button id="startChatButton">Начать чат</button>
+    </div>
+	</div>
+    <div id="chat-section" class="hidden">
+			<img src="./img/logo.svg" alt="Бот" id="bot-image">
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+        </div>
+        <div id="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Какие продукты есть?">
+            <button id="sendMessageButton"><img src="./img/Frame.svg" alt="enter" /></button>
+						<button id="clearButton"><img src="./img/removal.svg" alt="delete" /></button>
+        </div>
+    </div>
+</body>
+</html>
